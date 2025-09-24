@@ -15,7 +15,7 @@ import MineProject.example.MineProject.PojoClasses.LoginVO;
 import MineProject.example.MineProject.Service.LoginService;
 
 @RestController
-@CrossOrigin("http://localhost:4200")
+//@CrossOrigin("http://localhost:4200")
 public class LoginController {
 	
 	@Autowired

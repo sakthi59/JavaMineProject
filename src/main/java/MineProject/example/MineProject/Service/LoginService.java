@@ -31,6 +31,9 @@ public class LoginService {
 	
 	public Integer checkDupplicateUserName(LoginVO paylod) {
 		
+		try {
+			
+		
 		List<String> allUsersName = loginDAO.getAlluserName();
 		
 		for (String name : allUsersName) {
@@ -38,6 +41,11 @@ public class LoginService {
 			if (paylod.getEmail().equalsIgnoreCase(name)) {
 				return 0;
 			}
+		}
+		
+		} catch (Exception e) {
+			System.err.println(e);
+			return 0;
 		}
 		
 		return 1;

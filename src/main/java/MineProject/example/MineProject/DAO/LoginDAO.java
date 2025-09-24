@@ -8,6 +8,7 @@ import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.stereotype.Repository;
 
+import MineProject.example.MineProject.EntityClasses.LoginEntity;
 import MineProject.example.MineProject.PojoClasses.LoginVO;
 
 @Repository
@@ -45,5 +46,19 @@ public class LoginDAO {
 	public List<String> getAlluserName() {
 		
 		return namedParameterJdbcTemplate.queryForList(GET_ALL_LOGIN_USERS_NAME, new MapSqlParameterSource(), String.class);
+	}
+	
+	public List<LoginEntity> getLoginDetails()
+	{
+		return null;
+		
+//		return namedParameterJdbcTemplate.queryForList("select * from login_users_demo",List<LoginEntity> s);
+		
+	}
+	
+	public int batchUpdate(LoginVO loginVO) {
+		
+		
+		return 0;
 	}
 }

@@ -7,6 +7,7 @@ public class configurationList {
 	private String createData;
 	private String createTime;
 	private String configInfo;
+	private String configurationDesc;
 	
 	public int getConfigId() {
 		return configId;
@@ -37,6 +38,12 @@ public class configurationList {
 	}
 	public void setConfigInfo(String configInfo) {
 		this.configInfo = configInfo;
+	}
+	public String getConfigurationDesc() {
+		return configurationDesc;
+	}
+	public void setConfigurationDesc(String configurationDesc) {
+		this.configurationDesc = configurationDesc;
 	}
 	
 	
